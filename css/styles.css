@@ -21,10 +21,16 @@ body {
 
 /*ANIMATIONS*/
 
+
+/* These are the animations for the page. If you don't like them, remove them. If you like them, try tweaking the values - see what happens! */
 .header {
-	transition-duration: 0.4s;
+	transition-duration: 0.4s; /* This is how long transformations take to complete, for example, the scaling of the header on hover. */
 }
 
-.header:hover {
-	transform: scale(1.2);
+.header:hover { /*This is the trigger that detects when the user is hovering over an element. */
+	transform: scale(1.2); /* The transform trigger is the syntax for a movement - the scale variable tells the element how to transform.
+	You can change it if you want! */
+
+	/* This line adds a text shadow at the end of the transition. Tweak the values, or remove it completely to see what's best for you! */
+	text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black,  /* OUTLINE */ 2px 2px 5px white, 2px 2px 5px blue; /* SHADOW */
 }
