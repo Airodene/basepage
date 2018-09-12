@@ -10,13 +10,15 @@
 }
 
 body {
-	background-image: url("../img/background.jpg");
+	background-image: url("../img/background.jpg"); /* Change the background image to something of your liking. It can be a web address! */
 	background-size: cover;
 }
 
 @font-face {
 	font-family: headerfont;
-    src: url("../fonts/header.woff");
+	src: url("../fonts/header.woff"); /* This imports the font to use for the header, you can change it to your liking. Make sure the file is named "header.woff" */
+
+Read more: https://html.com/tags/comment-tag/#ixzz5Qt8qCstN
 }
 
 /*ANIMATIONS*/
