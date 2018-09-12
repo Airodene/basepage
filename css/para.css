@@ -1,0 +1,25 @@
+.parallax {
+  margin: auto;
+    /* This is the image in the first image box, pick an image of your choosing! */
+    background-image: url("../img/background.jpg");
+
+    /* Set a specific height and width for the image here. I set it to 90% as to leave room around the page */
+    height: 500px;
+    width: 90%;
+
+    box-shadow: 2px 2px 20px black;
+
+
+    /* This creates the parallax scrolling effect by keeping the image still while the page moves */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+ /* This turns off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed, but these values should be fine */
+@media only screen and (max-device-width: 1366px) {
+    .parallax {
+        background-attachment: scroll;
+    }
+} 

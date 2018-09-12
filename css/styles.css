@@ -1,4 +1,9 @@
 
+body {
+	background-image: radial-gradient(white, #f2f2f2);
+}
+
+
 .header {
 	color: rgb(255,40,30); /* This is the color of the header text, change it to your liking. */
 	text-align: center; /* This is to align the header to the center of the container */
@@ -6,19 +11,22 @@
 	font-size: 300%; /* Scaling, in percent, of the font. You can change this, using percent or pixels. */
 	margin-left: 0px; /* These two lines remove all margins of the header, it is recommended to always do this */
 	margin-right: 0px;
-	text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white; /* This adds the white outline, you could change the color or make it 
-	more blurry if you wish. */
-}
-
-body {
-	background-image: url("../img/background.jpg"); /* This is the background image URL, it can also be a web address, however this is not
-	recommended */
-	background-size: cover; /* This line is to make sure the background scales to the size of the screen correctly */
 }
 
 @font-face { /* This makes a custom font. font-family is the name to call the font, and the src is the URL of the font */
 	font-family: headerfont;
     src: url("../fonts/header.woff");
+}
+
+/* CONTENT */
+/* This is where all the content for the page is held, change the properties to your liking! */
+
+.content {
+	margin: auto;
+	background-image: radial-gradient(#e8e8e8, white);
+	width: 90%;
+	height: 500px;
+	box-shadow: 2px 2px 20px black;
 }
 
 /*ANIMATIONS*/
@@ -34,5 +42,5 @@ body {
 	You can change it if you want! */
 
 	/* This line adds a text shadow at the end of the transition. Tweak the values, or remove it completely to see what's best for you! */
-	text-shadow: 2px 2px 5px white;
+	text-shadow: 2px 2px 5px black;
 }
