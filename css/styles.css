@@ -5,12 +5,15 @@ body {
 
 
 .header {
-	color: rgb(255,40,30); /* This is the color of the header text, change it to your liking. */
+	color: rgb(255,255,255); /* This is the color of the header text, change it to your liking. */
 	text-align: center; /* This is to align the header to the center of the container */
 	font-family: headerfont; /* Custom font, see @font-face for details */
-	font-size: 300%; /* Scaling, in percent, of the font. You can change this, using percent or pixels. */
-	margin-left: 0px; /* These two lines remove all margins of the header, it is recommended to always do this */
+	font-size: 100px; /* Scaling, in percent, of the font. You can change this, using percent or pixels. */
+	margin-left: 0px; /* These two lines remove left and right margins of the header, it is recommended to always do this */
 	margin-right: 0px;
+	text-align: center; /* These lines align the text to the center of the container. If you change the height in para.css, change it here */
+	vertical-align: middle;
+	line-height: 500px;
 }
 
 @font-face { /* This makes a custom font. font-family is the name to call the font, and the src is the URL of the font */
@@ -22,11 +25,11 @@ body {
 /* This is where all the content for the page is held, change the properties to your liking! */
 
 .content {
-	margin: auto;
-	background-image: radial-gradient(#e8e8e8, white);
-	width: 90%;
-	height: 500px;
-	box-shadow: 2px 2px 20px black;
+	margin: auto; /* Centers the div element horizontally */
+	background-image: radial-gradient(#e8e8e8, white); /* Creates a gradient, you can change the color or make it a solid color */
+	width: 90%; /* This makes the width 90% of the page width */
+	height: 500px; /* Self explanatory, sets the height */
+	box-shadow: 2px 2px 20px black; /* Creates a drop shadow behind the element */
 }
 
 /*ANIMATIONS*/
