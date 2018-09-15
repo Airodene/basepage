@@ -35,10 +35,3 @@
     /* Makes the page fit to the window size, removes horizontal scrollbar */
     box-sizing: border-box;
 }
-
-/* This turns off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed, but these values should be fine */
-@media only screen and (max-device-width: 1366px) {
-    .parallax {
-        background-attachment: scroll;
-    }
-}
