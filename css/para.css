@@ -1,3 +1,24 @@
+.parallaxNav {
+    /* Get rid of the margin at the edges of the parallax div */
+    margin: 0;
+    /* This is the image in the first image box, pick an image of your choosing! */
+    background-image: url("../img/background3.jpg");
+    width: 100%;
+    /* This creates the parallax scrolling effect by keeping the image still while the page moves */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* This enables hardware acceleration, helping to reduce lag */
+    transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    /* Adds a shadow to the parallax box, giving a modern aesthetic */
+    box-shadow: 0 0 50px rgba(0, 0, 0, .5);
+    /* Makes the page fit to the window size, removes horizontal scrollbar */
+    box-sizing: border-box;
+}
+
 .parallax {
     /* Get rid of the margin at the edges of the parallax div */
     margin: 0;

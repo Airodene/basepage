@@ -14,6 +14,36 @@
 </head>
 
 <body>
+	<!-- PLEASE NOTE: 
+		If you are using Edge, the navbar blur WILL work.
+		If you are using Chrome, the navbar blur WON'T work, unless you enable 'Experimental Web Platform features' flag.
+			Note for Chrome: ensure 'Hardware acceleration' is enabled in settings, otherwise it may lag.
+		If you are using Firefox, the navbar blur WON'T work.
+		If you are using Safari, the navbar blur WILL work.
+	 -->
+	<header>
+		<div class="navBar">
+			<div class="navBarWrapper blur">
+				<ul class="navBarUl">
+					<li class="itemLi">
+						<a class="item button" href="#">
+							<strong>Home</strong>
+						</a>
+					</li>
+					<li class="itemLi">
+						<a class="item button" href="#">Add</a>
+					</li>
+					<li class="itemLi">
+						<a class="item button" href="#">More</a>
+					</li>
+					<li class="itemLi">
+						<a class="item button" href="#">Pages</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</header>
+
 	<div class="parallax headerBg">
 		<div class="headerWrapper">
 			<h1 class="header">
@@ -21,6 +51,10 @@
 				Welcome to BasePage!
 			</h1>
 		</div>
+	</div>
+
+	<div class="test">
+
 	</div>
 
 	<div class="content">
@@ -83,7 +117,7 @@
 
 <footer>
 	<div class="footerWrapper">
-			<!-- The text that appears in the footer -->
+		<!-- The text that appears in the footer -->
 		<p class="lightText">This is a footer.</p>
 	</div>
 </footer>
