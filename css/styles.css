@@ -108,11 +108,17 @@ p {
 	/* Set the transiotion options for the headers */
 	transition-duration: 200ms;
 	transition-timing-function: ease-in-out;
+	-webkit-transition-duration: 200ms;
+	-webkit-transition-timing-function: ease-in-out;
+	-moz-transition-duration: 200ms;
+	-moz-transition-timing-function: ease-in-out;
 }
 
 .header:hover {
 	/* Do the transitions when hovering over the headers */
 	transform: scale3d(1.1, 1.1, 1.1);
+	-webkit-transform: scale3d(1.1, 1.1, 1.1);
+	-moz-transform: scale3d(1.1, 1.1, 1.1);
 }
 
 .lightText {
