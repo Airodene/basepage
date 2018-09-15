@@ -1,88 +1,121 @@
+/* Imports the header font */
 @font-face {
-	font-family: headerfont;
+	font-family: headerFont;
 	src: url("../fonts/header.woff");
 }
+/* Imports the body font */
 @font-face {
-	font-family: font;
+	font-family: bodyFont;
 	src: url("../fonts/Roboto-Light.ttf");
 }
 
 body {
+	/* Removes some issues with page content going off-screen */
 	margin: 0;
 	padding: 0;
 }
 
 
 .headerBg {
-	background-color: lightblue;
+	/* The height of the box */
 	height: 500px;
+	/* Pads the text */
 	padding: 10px;
+	/* Ensures the text doesn't go off-screen */
 	flex-direction: column;
+	/* Set the text to the full width of the box */
 	width: 100%;
+	/* Make sure there's no gaps around the box */
 	margin: auto;
+	/* This allows the text to be properley centred */
 	display: table;
 }
 
 .headerWrapper {
-	margin: auto;
+	/* Make the text properley centres */
 	display: table-cell;
+	/* Align the text vertically */
 	vertical-align: middle;
 }
 
 .header {
+	/* Set the header text colour */
 	color: rgb(255, 255, 255);
+	/* Set the header font size */
 	font-size: 50pt;
+	/* Set the header font */
 	font-family: headerfont;
+	/* Align the text */
 	text-align: center;
-	margin:auto;
+	/* Set the width of the text */
 	width: 100%;
-	display: inline-block;
+	/* Align the text */
 	align-content: center;
+	/* Add a shadow to the text */
 	text-shadow: 0 0 20px rgb(0, 0, 0, 0.5);
 }
 
 
 .content {
-	margin: auto;
-	background-image: radial-gradient(#d6d6d6, white);
+	/* Set the width to the page's width */
 	width: 100%;
+	/* Automatically adjust the height depending on the text inside */
 	height: auto;
+	/* Add padding to the top and bottom */
 	padding-top: 5%;
 	padding-bottom: 5%;
 }
 
 .contentHeader {
+	/* Set the header colour */
 	color: #282828;
+	/* Set the header font */
 	font-family: headerfont;
+	/* Align the header */
 	text-align: center;
 	vertical-align: middle;
 }
 
 p {
-	font-family: font;
-	color: #282828;
+	/* Set the body font */
+	font-family: bodyFont;
+	/* Set the body colour */
+	color: #595959;
+	/* Make the body text bold */
+    font-weight: bold;
+	/* Align the body text */
 	text-align: center;
-	display: block;
+	/* Set the size of the body text */
+	font-size: 20px;
+	/* Make the text not able to stretch to the edge of the screen */
 	width: 90%;
+	/* Position text centrally */
 	padding-left: 5%;
 }
 
 .footerWrapper {
+	/* Set the footer's colour */
 	background-color: #282828;
+	/* Stretch the footer to the edges */
 	width: 100%;
+	/* Add padding to the top and bottom of the footer */
 	padding: 2% 0 2% 0;
+	/* Add a shadow */
     box-shadow: 0 0 50px rgba(0, 0, 0, .5);
 }
 
 .header {
+	/* Set the transiotion options for the headers */
 	transition-duration: 200ms;
 	transition-timing-function: ease-in-out;
 }
 
 .header:hover {
+	/* Do the transitions when hovering over the headers */
 	transform: scale3d(1.1, 1.1, 1.1);
 }
 
 .lightText {
+	/* A class to set any text to white */
 	color: rgb(214, 214, 214);
 }
