@@ -1,45 +1,43 @@
 .parallax {
-  margin: auto; /* This line keeps the container centered */
+    margin: 0;
+    /* This line keeps the container centered */
     /* This is the image in the first image box, pick an image of your choosing! */
     background-image: url("../img/background.jpg");
-
     /* Set a specific height and width for the image here. I set it to 90% as to leave room around the page */
     height: 500px;
-    width: 90%;
-
-    box-shadow: 2px 2px 20px black;
-
-
+    width: 100%;
     /* This creates the parallax scrolling effect by keeping the image still while the page moves */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    transform: translate3d(0, 0, 0);
+    box-shadow: 0 0 50px rgba(0, 0, 0, .5);
+    box-sizing: border-box;
 }
 
 .parallax2 {
-  margin: auto; /* This line keeps the container centered */
-    margin-top: 20px; /* This line separates the container from the others by 20px, change this value or remove this line if you'd like */
+    margin: 0;
+    /* This line keeps the container centered */
     /* This is the image in the second image box, pick an image of your choosing! */
     background-image: url("../img/background2.jpg");
-
     /* Set a specific height and width for the image here. I set it to 90% as to leave room around the page */
     height: 500px;
-    width: 90%;
-
-    box-shadow: 2px 2px 20px black;
-
-
+    width: 100%;
     /* This creates the parallax scrolling effect by keeping the image still while the page moves */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    transform: translate3d(0, 0, 0);
+    box-shadow: 0 0 50px rgba(0, 0, 0, .5);
+    box-sizing: border-box;
 }
 
- /* This turns off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed, but these values should be fine */
-@media only screen and (max-device-width: 1366px) {
+/* This turns off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed, but these values should be fine */
+
+@media only screen and (max-device-width: 1920px) {
     .parallax {
         background-attachment: scroll;
     }
-} 
+}
