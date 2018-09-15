@@ -1,49 +1,127 @@
+/* Imports the header font */
+@font-face {
+	font-family: headerFont;
+	src: url("../fonts/header.woff");
+}
+/* Imports the body font */
+@font-face {
+	font-family: bodyFont;
+	src: url("../fonts/Roboto-Light.ttf");
+}
 
 body {
-	background-image: radial-gradient(white, #f2f2f2);
+	/* Removes some issues with page content going off-screen */
+	margin: 0;
+	padding: 0;
 }
 
+
+.headerBg {
+	/* The height of the box */
+	height: 500px;
+	/* Pads the text */
+	padding: 10px;
+	/* Ensures the text doesn't go off-screen */
+	flex-direction: column;
+	/* Set the text to the full width of the box */
+	width: 100%;
+	/* Make sure there's no gaps around the box */
+	margin: auto;
+	/* This allows the text to be properley centred */
+	display: table;
+}
+
+.headerWrapper {
+	/* Make the text properley centres */
+	display: table-cell;
+	/* Align the text vertically */
+	vertical-align: middle;
+}
 
 .header {
-	color: rgb(255,255,255); /* This is the color of the header text, change it to your liking. */
-	text-align: center; /* This is to align the header to the center of the container */
-	font-family: headerfont; /* Custom font, see @font-face for details */
-	font-size: 100px; /* Scaling, in percent, of the font. You can change this, using percent or pixels. */
-	margin-left: 0px; /* These two lines remove left and right margins of the header, it is recommended to always do this */
-	margin-right: 0px;
-	text-align: center; /* These lines align the text to the center of the container. If you change the height in para.css, change it here */
-	vertical-align: middle;
-	line-height: 500px;
-}
-
-@font-face { /* This makes a custom font. font-family is the name to call the font, and the src is the URL of the font */
+	/* Set the header text colour */
+	color: rgb(255, 255, 255);
+	/* Set the header font size */
+	font-size: 50pt;
+	/* Set the header font */
 	font-family: headerfont;
-    src: url("../fonts/header.woff");
+	/* Align the text */
+	text-align: center;
+	/* Set the width of the text */
+	width: 100%;
+	/* Align the text */
+	align-content: center;
+	/* Add a shadow to the text */
+	text-shadow: 0 0 20px rgb(0, 0, 0, 0.5);
 }
 
-/* CONTENT */
-/* This is where all the content for the page is held, change the properties to your liking! */
 
 .content {
-	margin: auto; /* Centers the div element horizontally */
-	background-image: radial-gradient(#e8e8e8, white); /* Creates a gradient, you can change the color or make it a solid color */
-	width: 90%; /* This makes the width 90% of the page width */
-	height: 500px; /* Self explanatory, sets the height */
-	box-shadow: 2px 2px 20px black; /* Creates a drop shadow behind the element */
+	/* Set the width to the page's width */
+	width: 100%;
+	/* Automatically adjust the height depending on the text inside */
+	height: auto;
+	/* Add padding to the top and bottom */
+	padding-top: 5%;
+	padding-bottom: 5%;
 }
 
-/*ANIMATIONS*/
+.contentHeader {
+	/* Set the header colour */
+	color: #282828;
+	/* Set the header font */
+	font-family: headerfont;
+	/* Align the header */
+	text-align: center;
+	vertical-align: middle;
+}
 
+p {
+	/* Set the body font */
+	font-family: bodyFont;
+	/* Set the body colour */
+	color: #595959;
+	/* Make the body text bold */
+    font-weight: bold;
+	/* Align the body text */
+	text-align: center;
+	/* Set the size of the body text */
+	font-size: 20px;
+	/* Make the text not able to stretch to the edge of the screen */
+	width: 90%;
+	/* Position text centrally */
+	padding-left: 5%;
+}
 
-/* These are the animations for the page. If you don't like them, remove them. If you like them, try tweaking the values - see what happens! */
+.footerWrapper {
+	/* Set the footer's colour */
+	background-color: #282828;
+	/* Stretch the footer to the edges */
+	width: 100%;
+	/* Add padding to the top and bottom of the footer */
+	padding: 2% 0 2% 0;
+	/* Add a shadow */
+    box-shadow: 0 0 50px rgba(0, 0, 0, .5);
+}
+
 .header {
-	transition-duration: 0.4s; /* This is how long transformations take to complete, for example, the scaling of the header on hover. */
+	/* Set the transiotion options for the headers */
+	transition-duration: 200ms;
+	transition-timing-function: ease-in-out;
+	-webkit-transition-duration: 200ms;
+	-webkit-transition-timing-function: ease-in-out;
+	-moz-transition-duration: 200ms;
+	-moz-transition-timing-function: ease-in-out;
 }
 
-.header:hover { /*This is the trigger that detects when the user is hovering over an element. */
-	transform: scale(1.2); /* The transform trigger is the syntax for a movement - the scale variable tells the element how to transform.
-	You can change it if you want! */
+.header:hover {
+	/* Do the transitions when hovering over the headers */
+	transform: scale3d(1.1, 1.1, 1.1);
+	-webkit-transform: scale3d(1.1, 1.1, 1.1);
+	-moz-transform: scale3d(1.1, 1.1, 1.1);
+}
 
-	/* This line adds a text shadow at the end of the transition. Tweak the values, or remove it completely to see what's best for you! */
-	text-shadow: 2px 2px 5px black;
+.lightText {
+	/* A class to set any text to white */
+	color: rgb(214, 214, 214);
 }
