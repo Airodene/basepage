@@ -17,9 +17,13 @@
     box-shadow: 0 0 50px rgba(0, 0, 0, .5);
     /* Makes the page fit to the window size, removes horizontal scrollbar */
     box-sizing: border-box;
+    /* Enable smooth scrolling */
+    scroll-behavior: smooth;
+    /* Set the height of the section */
+    height: 500px;
 }
 
-.parallax2 {
+  .parallax2 {
     /* Get rid of the margin at the edges of the parallax div */
     margin: 0;
     /* This is the image in the second image box, pick an image of your choosing! */
@@ -38,6 +42,10 @@
     box-shadow: 0 0 50px rgba(0, 0, 0, .5);
     /* Makes the page fit to the window size, removes horizontal scrollbar */
     box-sizing: border-box;
+    /* Enable smooth scrolling */
+    scroll-behavior: smooth;
+    /* Set the height of the section */
+    height: 500px;
 }
 
 .parallax3 {
@@ -59,4 +67,8 @@
     box-shadow: 0 0 50px rgba(0, 0, 0, .5);
     /* Makes the page fit to the window size, removes horizontal scrollbar */
     box-sizing: border-box;
+    /* Enable smooth scrolling */
+    scroll-behavior: smooth;
+    /* Set the height of the section */
+    height: 500px;
 }

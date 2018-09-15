@@ -17,8 +17,6 @@ body {
 
 
 .headerBg {
-	/* The height of the box */
-	height: 500px;
 	/* Pads the text */
 	padding: 10px;
 	/* Ensures the text doesn't go off-screen */
