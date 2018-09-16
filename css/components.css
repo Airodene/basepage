@@ -1,0 +1,146 @@
+/*
+This is the style sheet for BasePage's components. Don't change anything if you don't know what you're doing!
+NOTE: If you see a RED component, you haven't specified the theme for it. Use class "lightSlider", for example
+    on a dark section. For more information, read the manual.
+*/
+
+/* Button */
+
+.buttonWrapper {
+    text-align: center;
+}
+
+.button {
+    border: none;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: bodyFont;
+    vertical-align: middle;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+    transition-duration: 200ms;
+    transition-timing-function: ease-in-out;
+    -webkit-transition-duration: 200ms;
+    -webkit-transition-timing-function: ease-in-out;
+    -moz-transition-duration: 200ms;
+    -moz-transition-timing-function: ease-in-out;
+    background-color: red;
+}
+
+.button:hover {
+    transform: scale3d(1.1, 1.1, 1.1);
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+    -moz-transform: scale3d(1.1, 1.1, 1.1);
+}
+
+.button:focus {
+    outline: 0;
+}
+
+.button.navBtn {
+    background-color: rgba(0, 0, 0, 0.15);
+    color: white;
+}
+
+.button.lightBtn {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: black;
+}
+
+.button.darkBtn {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+/* Slider */
+
+.sliderWrapper {
+    width: 50%;
+    margin: auto;
+}
+
+.slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 5px;
+    outline: none;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+    background-color: red;
+}
+
+.slider::-webkit-slider-thumb:hover {
+    transform: scale3d(1.5, 1.5, 1.5);
+    -webkit-transform: scale3d(1.5, 1.5, 1.5);
+    -moz-transform: scale3d(1.5, 1.5, 1.5);
+}
+
+.slider::-webkit-slider-thumb:active {
+    transform: scale3d(1.5, 1.5, 1.5);
+    -webkit-transform: scale3d(1.5, 1.5, 1.5);
+    -moz-transform: scale3d(1.5, 1.5, 1.5);
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    transition-duration: 200ms;
+    transition-timing-function: ease-in-out;
+    -webkit-transition-duration: 200ms;
+    -webkit-transition-timing-function: ease-in-out;
+    -moz-transition-duration: 200ms;
+    -moz-transition-timing-function: ease-in-out;
+}
+
+.slider::-moz-range-thumb:hover {
+    transform: scale3d(1.5, 1.5, 1.5);
+    -webkit-transform: scale3d(1.5, 1.5, 1.5);
+    -moz-transform: scale3d(1.5, 1.5, 1.5);
+}
+
+.slider::-moz-range-thumb:active {
+    transform: scale3d(1.5, 1.5, 1.5);
+    -webkit-transform: scale3d(1.5, 1.5, 1.5);
+    -moz-transform: scale3d(1.5, 1.5, 1.5);
+}
+
+.slider::-moz-range-thumb {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    transition-duration: 200ms;
+    transition-timing-function: ease-in-out;
+    -webkit-transition-duration: 200ms;
+    -webkit-transition-timing-function: ease-in-out;
+    -moz-transition-duration: 200ms;
+    -moz-transition-timing-function: ease-in-out;
+}
+
+.sliderWrapper.darkSlider .slider {
+    background: rgba(0, 0, 0, 0.25);
+}
+
+.sliderWrapper.lightSlider .slider {
+    background: rgba(255, 255, 255, 0.25);
+}
+
+.sliderWrapper.darkSlider .slider::-webkit-slider-thumb {
+    background: rgba(0, 0, 0, 0.75);
+}
+
+.sliderWrapper.lightSlider .slider::-webkit-slider-thumb {
+    background: rgba(255, 255, 255, 0.75);
+}
+
+.sliderWrapper.darkSlider .slider::-moz-range-thumb {
+    background: rgba(0, 0, 0, 0.75);
+}
+
+.sliderWrapper.lightSlider .slider::-moz-range-thumb {
+    background: rgba(255, 255, 255, 0.75);
+}

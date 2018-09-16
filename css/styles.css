@@ -28,36 +28,46 @@ header {
 	z-index: 1000;
 }
 
+p {
+	/* Set the body font */
+	font-family: bodyFont;
+	/* Set the body colour */
+	color: #282828;
+	/* Make the body text bold */
+	font-weight: bold;
+	/* Align the body text */
+	text-align: center;
+	/* Set the size of the body text */
+	font-size: 20px;
+	/* Make the text not able to stretch to the edge of the screen */
+	width: 90%;
+	/* Position text centrally */
+	padding-left: 5%;
+}
+
+.blur {
+	background-color: rgba(255, 255, 255, 0.5);
+	transform: translate3d(0, 0, 0);
+	-webkit-transform: translate3d(0, 0, 0);
+	-moz-transform: translate3d(0, 0, 0);
+}
+@supports ((-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px))) {
+	.blur {
+		background-color: rgba(255, 255, 255, .25);
+		-webkit-backdrop-filter: blur(10px);
+		backdrop-filter: blur(10px);
+		transform: translate3d(0, 0, 0);
+		-webkit-transform: translate3d(0, 0, 0);
+		-moz-transform: translate3d(0, 0, 0);
+	}
+}
+
 .navBar {
 	clear: both;
 	position: fixed;
 	width: 100%;
 	z-index: 999;
 	box-shadow: 0 0 50px black;
-}
-
-.blur {
-	background-color: rgba(255, 255, 255, 0.5);
-    transform: translate3d(0, 0, 0);
-    -webkit-transform: translate3d(0, 0, 0);
-    -moz-transform: translate3d(0, 0, 0);
-}
-
-@supports ((-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px))) {
-	.blur {
-	  background-color: rgba(255, 255, 255, .25);
-	  -webkit-backdrop-filter: blur(10px);
-	  backdrop-filter: blur(10px);
-	  transform: translate3d(0, 0, 0);
-	  -webkit-transform: translate3d(0, 0, 0);
-	  -moz-transform: translate3d(0, 0, 0);
-	}
-  }
-
-
-
-.nav-up {
-	top: -150px;
 }
 
 .navBar .navBarUl {
@@ -68,7 +78,6 @@ header {
 }
 
 .navBar .itemLi {
-	color: white;
 	display: inline-block;
 	display: inline-block;
 	*display: inline;
@@ -77,65 +86,11 @@ header {
 }
 
 .navBar .item {
-	color: white;
 	font-family: bodyFont;
 	margin: 0 16px 0 16px;
 }
 
-.navBar .button {
-	background-color: rgba(0, 0, 0, 0.1);
-	/* Green */
-	border: none;
-	color: white;
-	padding: 16px 32px;
-	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-	font-size: 16px;
-	font-family: bodyFont;
-	box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
-
-	transition-duration: 200ms;
-	transition-timing-function: ease-in-out;
-	-webkit-transition-duration: 200ms;
-	-webkit-transition-timing-function: ease-in-out;
-	-moz-transition-duration: 200ms;
-	-moz-transition-timing-function: ease-in-out;
-}
-
-.buttonWrapper {
-	text-align: center;
-}
-
-.button {
-	background-color: rgba(0, 0, 0, 0.5);
-	/* Green */
-	border: none;
-	color: white;
-	padding: 16px 32px;
-	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-	font-size: 16px;
-	font-family: bodyFont;
-	vertical-align: middle;
-	box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
-
-	transition-duration: 200ms;
-	transition-timing-function: ease-in-out;
-	-webkit-transition-duration: 200ms;
-	-webkit-transition-timing-function: ease-in-out;
-	-moz-transition-duration: 200ms;
-	-moz-transition-timing-function: ease-in-out;
-}
-
-.button:hover {
-	transform: scale3d(1.1, 1.1, 1.1);
-	-webkit-transform: scale3d(1.1, 1.1, 1.1);
-	-moz-transform: scale3d(1.1, 1.1, 1.1);
-}
-
-.headerBg {
+.parallaxSection {
 	/* The height of the box */
 	height: 500px;
 	/* Pads the text */
@@ -172,6 +127,20 @@ header {
 	align-content: center;
 	/* Add a shadow to the text */
 	text-shadow: 0 0 20px rgb(0, 0, 0, 0.5);
+	/* Set the transition options for the headers */
+	transition-duration: 200ms;
+	transition-timing-function: ease-in-out;
+	-webkit-transition-duration: 200ms;
+	-webkit-transition-timing-function: ease-in-out;
+	-moz-transition-duration: 200ms;
+	-moz-transition-timing-function: ease-in-out;
+}
+
+.header:hover {
+	/* Do the transitions when hovering over the headers */
+	transform: scale3d(1.1, 1.1, 1.1);
+	-webkit-transform: scale3d(1.1, 1.1, 1.1);
+	-moz-transform: scale3d(1.1, 1.1, 1.1);
 }
 
 .content {
@@ -194,21 +163,19 @@ header {
 	vertical-align: middle;
 }
 
-p {
-	/* Set the body font */
-	font-family: bodyFont;
-	/* Set the body colour */
-	color: #595959;
-	/* Make the body text bold */
-	font-weight: bold;
-	/* Align the body text */
-	text-align: center;
-	/* Set the size of the body text */
-	font-size: 20px;
-	/* Make the text not able to stretch to the edge of the screen */
-	width: 90%;
-	/* Position text centrally */
-	padding-left: 5%;
+.darkContent {
+	background-color: #282828;
+	color: white;
+}
+
+.darkContent .contentHeader {
+	/* A class to set any text to white */
+	color: rgb(214, 214, 214);
+}
+
+.darkContent p {
+	/* A class to set any text to white */
+	color: rgb(214, 214, 214);
 }
 
 .footerWrapper {
@@ -220,23 +187,6 @@ p {
 	padding: 2% 0 2% 0;
 	/* Add a shadow */
 	box-shadow: 0 0 50px rgba(0, 0, 0, .5);
-}
-
-.header {
-	/* Set the transiotion options for the headers */
-	transition-duration: 200ms;
-	transition-timing-function: ease-in-out;
-	-webkit-transition-duration: 200ms;
-	-webkit-transition-timing-function: ease-in-out;
-	-moz-transition-duration: 200ms;
-	-moz-transition-timing-function: ease-in-out;
-}
-
-.header:hover {
-	/* Do the transitions when hovering over the headers */
-	transform: scale3d(1.1, 1.1, 1.1);
-	-webkit-transform: scale3d(1.1, 1.1, 1.1);
-	-moz-transform: scale3d(1.1, 1.1, 1.1);
 }
 
 .lightText {

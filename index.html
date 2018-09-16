@@ -6,6 +6,8 @@
 	<link rel="stylesheet" href="css/styles.css"></link>
 	<!-- Do not change this line unless you know what you are doing! -->
 	<link rel="stylesheet" href="css/para.css"></link>
+	<!-- Do not change this line unless you know what you are doing! -->
+	<link rel="stylesheet" href="css/components.css"></link>
 	<!-- Add a favicon to the tab -->
 	<link rel="icon" href="favicon.ico" type="image/x-icon"></link>
 
@@ -26,25 +28,25 @@
 			<div class="navBarWrapper blur">
 				<ul class="navBarUl">
 					<li class="itemLi">
-						<a class="item button" href="#">
+						<a class="item button navBtn">
 							<strong>Home</strong>
 						</a>
 					</li>
 					<li class="itemLi">
-						<a class="item button" href="#">Add</a>
+						<a class="item button navBtn">Add</a>
 					</li>
 					<li class="itemLi">
-						<a class="item button" href="#">More</a>
+						<a class="item button navBtn">More</a>
 					</li>
 					<li class="itemLi">
-						<a class="item button" href="#">Pages</a>
+						<a class="item button navBtn">Pages</a>
 					</li>
 				</ul>
 			</div>
 		</div>
 	</header>
 
-	<div class="parallaxSection parallax1 headerBg">
+	<div class="parallaxSection parallax1">
 		<div class="headerWrapper">
 			<h1 class="header">
 				<!-- This is the text that appears on the 1st parallax box -->
@@ -65,70 +67,55 @@
 			to fork it!</p>
 	</div>
 
-	<div class="parallaxSection parallax2 headerBg">
+	<div class="parallaxSection parallax2">
 		<div class="headerWrapper">
 			<h1 class="header">
 				<!-- This is the text that appears on the 2nd parallax box -->
-				Simplicity.
+				Simple Components
 			</h1>
 		</div>
 	</div>
 
 	<div class="content">
 		<!-- The header for the 2nd content section -->
-		<h1 class="contentHeader">Behold</h1>
+		<h1 class="contentHeader">Buttons</h1>
 		<!-- The body for the 2nd content section -->
-		<p>This is what BasePage looks like when the person writing the page runs out of ideas.</p>
-	</div>
-
-	<div class="parallaxSection parallax3 headerBg">
-		<div class="headerWrapper">
-			<h1 class="header">
-				<!-- This is the text that appears on the 2nd parallax box -->
-				Another Parallax Section
-			</h1>
-		</div>
-	</div>
-
-	<div class="content">
-		<!-- The header for the 2nd content section -->
-		<h1 class="contentHeader">Because They Look Cool</h1>
-		<!-- The body for the 2nd content section -->
-		<p>Yes they do.</p>
-	</div>
-
-	<div class="parallaxSection parallax4 headerBg">
-		<div class="headerWrapper">
-			<h1 class="header">
-				<!-- This is the text that appears on the 2nd parallax box -->
-				Yet Another Parallax Section
-			</h1>
-		</div>
-	</div>
-
-	<div class="content">
-		<!-- The header for the 2nd content section -->
-		<h1 class="contentHeader">Because They Really Do Look Cool</h1>
-		<!-- The body for the 2nd content section -->
-		<p>"They really do!" -Barrack Obama, 1943</p>
-	</div>
-
-	<div class="parallaxSection parallax5 headerBg">
-		<div class="headerWrapper">
-			<h1 class="header">
-				<!-- This is the text that appears on the 2nd parallax box -->
-				Learn More
-			</h1>
-		</div>
-	</div>
-
-	<div class="content">
-		<!-- The header for the 2nd content section -->
-		<h1 class="contentHeader">About Us</h1>
-		<!-- The body for the 2nd content section -->
-		<p>BasePage is a project for new webdesigners, by new(ish) webdesigners. The button below does nothing, just so you know.</p>
+		<p>An example of our button component</p>
 		<div class="buttonWrapper">
-			<button class="button">Hello</button>
+			<button class="button darkBtn">This is a dark button</button>
+		</div>
+		<br>
+		<div class="buttonWrapper">
+			<button class="button lightBtn">This is a light button</button>
+		</div>
+	</div>
+
+	<div class="content">
+		<!-- The header for the 2nd content section -->
+		<h1 class="contentHeader">Sliders</h1>
+		<!-- The body for the 2nd content section -->
+		<p>Check out our range slider!</p>
+		<div class="sliderWrapper darkSlider">
+			<input type="range" min="1" max="100" value="50" class="slider" id="rangeSlider1">
+		</div>
+	</div>
+
+	<div class="parallaxSection parallax3">
+		<div class="headerWrapper">
+			<h1 class="header">
+				<!-- This is the text that appears on the 2nd parallax box -->
+				Themes
+			</h1>
+		</div>
+	</div>
+
+	<div class="content darkContent">
+		<!-- The header for the 2nd content section -->
+		<h1 class="contentHeader">Dark Mode</h1>
+		<!-- The body for the 2nd content section -->
+		<p>Per-content-section dark mode allows flexible theming!</p>
+		<div class="sliderWrapper lightSlider">
+			<input type="range" min="1" max="100" value="50" class="slider" id="rangeSlider1">
 		</div>
 	</div>
 
