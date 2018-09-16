@@ -7,10 +7,10 @@
 
 /* Imports the body font */
 
-@font-face {
-	font-family: bodyFont;
+/* @font-face {
+	font-family: 'Montserrat';
 	src: url("../fonts/Roboto-Light.woff");
-}
+} */
 
 body {
 	/* Removes some issues with page content going off-screen */
@@ -30,11 +30,9 @@ header {
 
 p {
 	/* Set the body font */
-	font-family: bodyFont;
+	font-family: 'Montserrat';
 	/* Set the body colour */
 	color: #282828;
-	/* Make the body text bold */
-	font-weight: bold;
 	/* Align the body text */
 	text-align: center;
 	/* Set the size of the body text */
@@ -46,7 +44,7 @@ p {
 }
 
 .blur {
-	background-color: rgba(255, 255, 255, 0.5);
+	background-color: rgba(255, 255, 255, 0.75);
 	transform: translate3d(0, 0, 0);
 	-webkit-transform: translate3d(0, 0, 0);
 	-moz-transform: translate3d(0, 0, 0);
@@ -86,7 +84,7 @@ p {
 }
 
 .navBar .item {
-	font-family: bodyFont;
+	font-family: 'Montserrat';
 	margin: 0 16px 0 16px;
 }
 
@@ -158,6 +156,8 @@ p {
 	color: #282828;
 	/* Set the header font */
 	font-family: headerfont;
+	/* Set the header size */
+	font-size: 40pt;
 	/* Align the header */
 	text-align: center;
 	vertical-align: middle;
