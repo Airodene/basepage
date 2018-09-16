@@ -66,6 +66,8 @@ p {
 	width: 100%;
 	z-index: 999;
 	box-shadow: 0 0 50px black;
+	display: block;
+    transition: top 300ms ease-in-out; /* Transition effect when sliding down (and up) */
 }
 
 .navBar .navBarUl {
