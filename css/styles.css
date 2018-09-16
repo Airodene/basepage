@@ -163,6 +163,11 @@ p {
 	vertical-align: middle;
 }
 
+.contentSeparator {
+	width: 100%;
+	padding: 50px 0 50px 0;
+}
+
 .darkContent {
 	background-color: #282828;
 	color: white;

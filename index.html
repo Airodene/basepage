@@ -46,17 +46,13 @@
 		</div>
 	</header>
 
-	<div class="parallaxSection parallax1">
+	<div class="parallaxSection parallax5">
 		<div class="headerWrapper">
 			<h1 class="header">
 				<!-- This is the text that appears on the 1st parallax box -->
 				Welcome to BasePage!
 			</h1>
 		</div>
-	</div>
-
-	<div class="test">
-
 	</div>
 
 	<div class="content">
@@ -81,20 +77,21 @@
 		<h1 class="contentHeader">Buttons</h1>
 		<!-- The body for the 2nd content section -->
 		<p>An example of our button component</p>
+
 		<div class="buttonWrapper">
 			<button class="button darkBtn">This is a dark button</button>
 		</div>
-		<br>
+		<br> <!-- Add a line break between 2 components directly after each other! -->
 		<div class="buttonWrapper">
 			<button class="button lightBtn">This is a light button</button>
 		</div>
-	</div>
 
-	<div class="content">
-		<!-- The header for the 2nd content section -->
+		<!-- You can have multiple headers in one content, just make sure to add a separator! -->
+		<div class="contentSeparator"></div>
+		
+		<!-- Don't duplicate the 'content' div; make sure they're in the same div with a separator -->
 		<h1 class="contentHeader">Sliders</h1>
-		<!-- The body for the 2nd content section -->
-		<p>Check out our range slider!</p>
+		<p>Check out our dark range slider!</p>
 		<div class="sliderWrapper darkSlider">
 			<input type="range" min="1" max="100" value="50" class="slider" id="rangeSlider1">
 		</div>
@@ -113,10 +110,35 @@
 		<!-- The header for the 2nd content section -->
 		<h1 class="contentHeader">Dark Mode</h1>
 		<!-- The body for the 2nd content section -->
-		<p>Per-content-section dark mode allows flexible theming!</p>
+		<p>Per-content-section dark mode allows flexible theming! Here's a light slider:</p>
 		<div class="sliderWrapper lightSlider">
 			<input type="range" min="1" max="100" value="50" class="slider" id="rangeSlider1">
 		</div>
+		
+		<p>Both buttons work in both themes:</p>
+		<div class="buttonWrapper">
+			<button class="button darkBtn">This is a dark button</button>
+		</div>
+		<br> <!-- Add a line break between 2 components directly after each other! -->
+		<div class="buttonWrapper">
+			<button class="button lightBtn">This is a light button</button>
+		</div>
+	</div>
+
+	<div class="parallaxSection parallax4">
+		<div class="headerWrapper">
+			<h1 class="header">
+				<!-- This is the text that appears on the 2nd parallax box -->
+				BasePage
+			</h1>
+		</div>
+	</div>
+
+	<div class="content">
+		<!-- The header for the 1st content section -->
+		<h1 class="contentHeader">Modern & Simple</h1>
+		<!-- The body for the 1st content section -->
+		<p>BasePage focuses on a modern aesthetic, while remaining easy for beginers. The flexible theme and component support allows anyone to setup a website easily!</p>
 	</div>
 
 </body>

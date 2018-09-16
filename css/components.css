@@ -59,6 +59,7 @@ NOTE: If you see a RED component, you haven't specified the theme for it. Use cl
 .sliderWrapper {
     width: 50%;
     margin: auto;
+    padding: 0 0 20px 0;
 }
 
 .slider {
