@@ -82,7 +82,7 @@ header {
 	margin: 0 16px 0 16px;
 }
 
-.button {
+.navBar .button {
 	background-color: rgba(0, 0, 0, 0.1);
 	/* Green */
 	border: none;
@@ -93,6 +93,32 @@ header {
 	display: inline-block;
 	font-size: 16px;
 	font-family: bodyFont;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+
+	transition-duration: 200ms;
+	transition-timing-function: ease-in-out;
+	-webkit-transition-duration: 200ms;
+	-webkit-transition-timing-function: ease-in-out;
+	-moz-transition-duration: 200ms;
+	-moz-transition-timing-function: ease-in-out;
+}
+
+.buttonWrapper {
+	text-align: center;
+}
+
+.button {
+	background-color: rgba(0, 0, 0, 0.5);
+	/* Green */
+	border: none;
+	color: white;
+	padding: 16px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	font-family: bodyFont;
+	vertical-align: middle;
 	box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
 
 	transition-duration: 200ms;
