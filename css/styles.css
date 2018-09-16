@@ -196,6 +196,14 @@ p {
 	box-shadow: 0 0 50px rgba(0, 0, 0, .5);
 }
 
+.footerWrapper .footerMain {
+	font-size: 75%;
+}
+
+.footerWrapper .footerSecondary {
+	font-size: 50%;
+}
+
 .lightText {
 	/* A class to set any text to white */
 	color: rgb(214, 214, 214);
