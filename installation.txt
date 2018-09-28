@@ -1,8 +1,1 @@
 Instructions for install:
-
-
-Extract downloaded files into a folder. This can be called anything.
-Extract the CONTENTS of the folder into your webroot. NOT the actual folder.
-Follow our documentation for editing and customisation instructions!
-
-NOTE: BasePage does not support installation into subdirectories natively. You will have to redirect your domain to the subdirectory in which BasePage is installed.
