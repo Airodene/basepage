@@ -1,1 +1,3 @@
 Instructions for install:
+
+Drag and drop the contents of the zip file into your PHP-Enabled webroot. PHP is important for this version to work. Without it, the website will not display correctly. You also need to ensure you have PHP 7 installed (not PHP 5)
