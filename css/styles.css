@@ -13,7 +13,7 @@
 } */
 
 body {
-	/* Removes some issues with page content going off-screen */
+	/* Removes some issues with page content going off-screen on mobile */
 	margin: 0;
 	padding: 0;
 }
@@ -29,19 +29,21 @@ header {
 }
 
 p {
-	/* Set the body font */
+	/* Sets the font used for all text, change if you prefer */
 	font-family: 'Montserrat';
-	/* Set the body colour */
+	/* Sets the text color */
 	color: #282828;
-	/* Align the body text */
+	/* Align the text to the center, you can change it to left or right if you wish */
 	text-align: center;
-	/* Set the size of the body text */
+	/* Sets the size of the font */
 	font-size: 20px;
-	/* Make the text not able to stretch to the edge of the screen */
+	/* This keeps the text from touching the edge of the screen, remove or edit if you want */
 	width: 90%;
-	/* Position text centrally */
+	/* Positions text correctly */
 	padding-left: 5%;
 }
+
+/* THESE NEXT TWO ARGUMENTS ARE FOR GENERAL BLURRING, YOU CAN REMOVE IF YOU DO NOT WISH FOR ANY BLUR EFFECTS */
 
 .blur {
 	background-color: rgba(255, 255, 255, 0.75);
@@ -49,6 +51,7 @@ p {
 	-webkit-transform: translate3d(0, 0, 0);
 	-moz-transform: translate3d(0, 0, 0);
 }
+
 @supports ((-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px))) {
 	.blur {
 		background-color: rgba(255, 255, 255, .25);
@@ -59,6 +62,8 @@ p {
 		-moz-transform: translate3d(0, 0, 0);
 	}
 }
+
+/*THIS IS FOR THE NAVBAR AT THE TOP OF THE PAGE, EDITING CAN MESS THINGS UP, MAKE SURE YOU KNOW WHAT YOU ARE DOING */
 
 .navBar {
 	clear: both;
