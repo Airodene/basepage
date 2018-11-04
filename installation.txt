@@ -1,10 +1,17 @@
 Instructions for install:
 
+Once you have downloaded, extract and place all the files included inside your web root.
+Your webroot should then look something like this:
+- css
+- fonts
+- img
+- scr
+- favicon.ico
+- index.html
+- info.html
+- installation.txt
+- README.md
 
-Extract downloaded files into a folder. This can be called anything.
-Extract the CONTENTS of the folder into your webroot. NOT the actual folder.
+
 Follow our documentation and in-file comments for editing and customisation instructions!
-
-NOTE: BasePage does not support installation into subdirectories natively. You will have to redirect your domain to the subdirectory in which BasePage is installed for it to work.
-
-BasePage can also be installed as a page of a larger website, as long as the link points to index.php
+BasePage can also be installed as a page of a larger website, as long as the link points to index.html
