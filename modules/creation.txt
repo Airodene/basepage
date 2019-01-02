@@ -1,0 +1,12 @@
+This is where you place any modules you either create or download. To install a module, place it into this folder, and remember the name. Then, inside "index.php" in the root, you can paste the following code to add the module:
+
+	include 'modules/modulename.php';
+
+Where "modulename" is the name of your module. Place this code wherever you want the module to appear.
+	You can also place modules inside other modules, but you instead change the code to the following:
+
+		include 'modulename.php'
+
+	Again, where "modulename" is the name of the module.
+
+This system should hopefully enable more developers to easily extend and modify BasePage's capabilities, and provide beginners with another easy way to modify their website to their liking.
